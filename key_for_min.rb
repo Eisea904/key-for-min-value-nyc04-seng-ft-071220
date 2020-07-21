@@ -6,16 +6,12 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  lowest_value = 10000 #any large value
+  array_ordered_by_age = []
+  array_ordered_by_age = name_hash.collect {|name, age|
+    age}.sort
   name_hash.each do |name, age|
-    if age < lowest_value
-      lowest_value = age
-    end
-  end
-  #binding.pry
-  name_hash.each do |name, age|
-    if name_hash == lowest_value
+    if age == array_ordered_by_age[0]
       puts name
     end
   end
-end
+end 
