@@ -14,7 +14,7 @@ def key_for_min_value(name_hash)
   end
   #binding.pry
   name_hash.each do |name, age|
-    if name_hash[name age] == lowest_value
+    if name_hash == lowest_value
       puts name
     end
   end
